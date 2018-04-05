@@ -1,5 +1,13 @@
 import React, { Component } from "react";
-import { View, StyleSheet, TouchableOpacity, Text, Animated, Easing } from "react-native";
+import {
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Text,
+  Animated,
+  Easing,
+  Image
+} from "react-native";
 import { LinearGradient } from "expo";
 
 class ToggleButton extends Component {
@@ -46,6 +54,7 @@ class ToggleButton extends Component {
           <Animated.View
             style={{
               position: "absolute",
+              overflow: "hidden",
               left: 0,
               top: 0,
               right: 0,
@@ -65,10 +74,10 @@ class ToggleButton extends Component {
             }}
           >
             <LinearGradient
-              colors={["blue", "tomato"]}
+              colors={["#000046", "#1cb5e0"]}
               start={[0.1, 0.4]}
               end={[0.5, 0.4]}
-              style={{ width: 100, height: 100 }}
+              style={{ flex: 1 }}
             />
           </Animated.View>
 

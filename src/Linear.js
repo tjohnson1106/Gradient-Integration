@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import { LinearGradient } from "expo";
 
 import ToggleButton from "./ToggleButton";
@@ -10,10 +10,10 @@ class Linear extends Component {
     return (
       <View style={styles.container}>
         <LinearGradient
-          colors={["blue", "tomato"]}
+          colors={["#000046", "#1cb5e0"]}
           start={[0.1, 0.4]}
           end={[0.5, 0.4]}
-          style={{ width: 100, height: 100 }}
+          style={{ width: 200, height: 200 }}
         />
         <ToggleButton />
       </View>
